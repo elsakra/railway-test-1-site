@@ -13,7 +13,7 @@ import Footer from '../components/Footer.astro';
   description="Southaven Internal Medicine provides comprehensive internal medicine care in Southaven, MS. Board certified physicians Dr. Magdi Wassef and Dr. Mary Missak offer preventative care, chronic disease management, and same-day appointments."
 >
   <Header />
-  <main>
+  <main class="flex-1">
     <Hero />
     <About />
     <Services />
@@ -26,4 +26,18 @@ import Footer from '../components/Footer.astro';
   html {
     scroll-behavior: smooth;
   }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
 </style>
+
+<script>
+  import '../styles/global.css';
+</script>
