@@ -63,11 +63,11 @@
         <a href="/providers" class="text-gray-700 hover:text-teal font-medium">Meet our Providers</a>
         <a href="/faq" class="text-gray-700 hover:text-teal font-medium">FAQ</a>
         <div class="pt-4 border-t border-gray-200">
-          <div class="text-sm text-gray-600 mb-4">
+          <div class="text-sm mb-4">
             <div class="font-semibold text-navy">P: (662) 349-1999</div>
             <div class="text-gray-600">F: (662) 349-9734</div>
           </div>
-          <a href="tel:662-349-1999" class="btn-primary block text-center">
+          <a href="tel:662-349-1999" class="btn-primary w-full text-center">
             Call Now
           </a>
         </div>
@@ -77,15 +77,12 @@
 </nav>
 
 <script>
-  // Mobile menu toggle
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     
-    if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    }
+    mobileMenuButton?.addEventListener('click', function() {
+      mobileMenu?.classList.toggle('hidden');
+    });
   });
 </script>
