@@ -1,0 +1,88 @@
+---
+// Header component
+---
+
+<!-- Announcement Bar -->
+<div class="bg-navy text-white text-center py-3">
+  <div class="container-custom">
+    <p class="text-sm font-medium">📞 Call us today at (662) 349-1999 | ✉️ Pre-Registration Available</p>
+  </div>
+</div>
+
+<!-- Main Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="container-custom">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-3 group">
+        <img 
+          src="https://res.cloudinary.com/dil14r8je/image/upload/v1768286991/auto-site-builder/railway-test-1/image_0.jpg" 
+          alt="Southaven Internal Medicine Logo" 
+          class="h-16 w-16 rounded-full object-cover transition-transform group-hover:scale-105"
+        />
+        <div class="flex flex-col">
+          <span class="text-xl font-bold text-navy">Southaven Internal Medicine</span>
+          <span class="text-sm text-gray-600">est. 1996</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="text-gray-700 hover:text-teal font-medium transition-colors">Home</a>
+        <a href="/patient-portal" class="text-gray-700 hover:text-teal font-medium transition-colors">Patient Portal</a>
+        <a href="/hours-location" class="text-gray-700 hover:text-teal font-medium transition-colors">Hours & Location</a>
+        <a href="/providers" class="text-gray-700 hover:text-teal font-medium transition-colors">Meet our Providers</a>
+        <a href="/faq" class="text-gray-700 hover:text-teal font-medium transition-colors">FAQ</a>
+      </div>
+
+      <!-- Contact Info & CTA -->
+      <div class="hidden lg:flex items-center space-x-6">
+        <div class="text-right text-sm">
+          <div class="font-semibold text-navy">P: (662) 349-1999</div>
+          <div class="text-gray-600">F: (662) 349-9734</div>
+        </div>
+        <a href="tel:662-349-1999" class="btn-primary">
+          Call Now
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md hover:bg-gray-100">
+        <svg class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-200 py-4">
+      <div class="flex flex-col space-y-4">
+        <a href="/" class="text-gray-700 hover:text-teal font-medium">Home</a>
+        <a href="/patient-portal" class="text-gray-700 hover:text-teal font-medium">Patient Portal</a>
+        <a href="/hours-location" class="text-gray-700 hover:text-teal font-medium">Hours & Location</a>
+        <a href="/providers" class="text-gray-700 hover:text-teal font-medium">Meet our Providers</a>
+        <a href="/faq" class="text-gray-700 hover:text-teal font-medium">FAQ</a>
+        <div class="pt-4 border-t border-gray-200">
+          <div class="text-sm mb-3">
+            <div class="font-semibold text-navy">P: (662) 349-1999</div>
+            <div class="text-gray-600">F: (662) 349-9734</div>
+          </div>
+          <a href="tel:662-349-1999" class="btn-primary w-full text-center block">
+            Call Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>

@@ -1,0 +1,75 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Southaven Internal Medicine - Dedicated to our patients since 1996. Board certified physicians providing comprehensive internal medicine care in a friendly and comfortable environment." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="internal medicine, Southaven MS, Dr. Magdi Wassef, Dr. Mary Missak, healthcare, family medicine, preventative care, board certified physicians" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "Southaven Internal Medicine",
+      "description": "Board certified internal medicine practice serving Southaven, MS since 1996",
+      "url": "https://southaven-internal-medicine.com",
+      "telephone": "(662) 349-1999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7680 Airways Blvd",
+        "addressLocality": "Southaven",
+        "addressRegion": "MS",
+        "postalCode": "38671",
+        "addressCountry": "US"
+      },
+      "openingHours": [
+        "Mo 07:00-17:00",
+        "Tu 08:00-17:00",
+        "We 07:00-17:00",
+        "Th 08:00-17:00",
+        "Fr 07:00-11:00"
+      ],
+      "physician": [
+        {
+          "@type": "Physician",
+          "name": "Dr. Magdi Wassef",
+          "medicalSpecialty": "Internal Medicine"
+        },
+        {
+          "@type": "Physician",
+          "name": "Dr. Mary Missak",
+          "medicalSpecialty": "Internal Medicine"
+        }
+      ]
+    }
+    </script>
+    
+    <title>{title}</title>
+  </head>
+  
+  <body class="bg-white">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,224 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="FAQ | Southaven Internal Medicine"
+  description="Frequently asked questions about Southaven Internal Medicine including insurance, lab services, telehealth, and payment options."
+>
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-navy py-16">
+      <div class="container-custom">
+        <div class="text-center text-white">
+          <h1 class="text-4xl lg:text-5xl font-bold mb-4">Frequently Asked Questions</h1>
+          <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            Find answers to common questions about our services, insurance, and policies
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="section-padding bg-white">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <!-- FAQ List -->
+          <div class="lg:col-span-2">
+            <div class="space-y-8">
+              <!-- Insurance FAQ -->
+              <div class="bg-light-blue p-8 rounded-lg">
+                <h2 class="text-2xl font-bold text-navy mb-4">What insurances do you all accept?</h2>
+                <p class="text-gray-700 mb-4">
+                  We take all major insurances except for the following:
+                </p>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start space-x-2">
+                    <span class="text-red-500 font-bold mt-1">×</span>
+                    <span>CIGA-Connect Network</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <span class="text-red-500 font-bold mt-1">×</span>
+                    <span>TN Care</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <span class="text-red-500 font-bold mt-1">×</span>
+                    <span>United Healthcare 3 Rivers</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <span class="text-red-500 font-bold mt-1">×</span>
+                    <span>United Healthcare Common Plan</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <span class="text-red-500 font-bold mt-1">×</span>
+                    <span>United Healthcare Ambetter</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <span class="text-red-500 font-bold mt-1">×</span>
+                    <span>United Healthcare Compass</span>
+                  </li>
+                  <li class="flex items-start space-x-2">
+                    <span class="text-red-500 font-bold mt-1">×</span>
+                    <span>United Healthcare Dual Complete</span>
+                  </li>
+                </ul>
+                <div class="mt-6 p-4 bg-teal bg-opacity-10 rounded-lg">
+                  <p class="text-navy font-medium">
+                    💡 <strong>Tip:</strong> Call us at (662) 349-1999 to verify your specific insurance coverage before your visit.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Lab Work FAQ -->
+              <div class="bg-white border border-gray-200 p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-navy mb-4">If the doctor orders me blood work, where can I get it done?</h2>
+                <p class="text-gray-700 mb-4">
+                  For your convenience, <strong class="text-navy">American Esoteric Laboratories (AEL)</strong> 
+                  has a location right inside our office. All blood work your physician orders can be done on site.
+                </p>
+                <div class="bg-light-blue p-4 rounded-lg">
+                  <div class="flex items-center space-x-3">
+                    <svg class="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span class="font-semibold text-navy">On-site lab services for your convenience</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Telehealth FAQ -->
+              <div class="bg-light-blue p-8 rounded-lg">
+                <h2 class="text-2xl font-bold text-navy mb-4">What if I'm not able to come in for an office visit but I want to see the doctor?</h2>
+                <p class="text-gray-700 mb-4">
+                  Don't worry! We are now offering <strong class="text-navy">telehealth options</strong> for our patients. 
+                  This option allows the doctor to Face Time or call patients securely for their office visit.
+                </p>
+                <p class="text-gray-700 mb-4">
+                  Of course some appointments still require an in person visit.
+                </p>
+                <div class="bg-white p-4 rounded-lg">
+                  <p class="text-navy font-medium">
+                    📞 <strong>Interested?</strong> Call and ask about our telehealth appointments at (662) 349-1999
+                  </p>
+                </div>
+              </div>
+
+              <!-- Payment FAQ -->
+              <div class="bg-white border border-gray-200 p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-navy mb-4">Which credit cards do you all accept?</h2>
+                <p class="text-gray-700 mb-4">
+                  We accept all major credit cards.
+                </p>
+                <div class="flex items-center space-x-4 mt-4">
+                  <div class="bg-light-blue px-4 py-2 rounded-lg text-navy font-medium">Visa</div>
+                  <div class="bg-light-blue px-4 py-2 rounded-lg text-navy font-medium">Mastercard</div>
+                  <div class="bg-light-blue px-4 py-2 rounded-lg text-navy font-medium">American Express</div>
+                  <div class="bg-light-blue px-4 py-2 rounded-lg text-navy font-medium">Discover</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="space-y-8">
+            <!-- Contact Info -->
+            <div class="bg-navy p-6 rounded-lg text-white">
+              <h3 class="text-xl font-semibold mb-4">Have More Questions?</h3>
+              <p class="text-gray-300 mb-6">
+                Our friendly staff is here to help with any questions you may have.
+              </p>
+              <div class="space-y-4">
+                <a href="tel:662-349-1999" class="btn-primary w-full text-center block">
+                  Call (662) 349-1999
+                </a>
+                <div class="text-center text-gray-300">
+                  <p>Monday & Wednesday: 7:00 AM - 5:00 PM</p>
+                  <p>Tuesday & Thursday: 8:00 AM - 5:00 PM</p>
+                  <p>Friday: 7:00 AM - 11:00 AM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="bg-light-blue p-6 rounded-lg">
+              <h3 class="text-xl font-semibold text-navy mb-4">Quick Links</h3>
+              <ul class="space-y-3">
+                <li>
+                  <a href="/patient-portal" class="text-gray-700 hover:text-teal transition-colors flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <span>Patient Portal</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/hours-location" class="text-gray-700 hover:text-teal transition-colors flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    </svg>
+                    <span>Hours & Location</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/providers" class="text-gray-700 hover:text-teal transition-colors flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                    <span>Meet Our Providers</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Image -->
+            <div>
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768286994/auto-site-builder/railway-test-1/image_13.jpg" 
+                alt="Doctor and Patient consultation" 
+                class="w-full rounded-lg shadow-md"
+              />
+              <p class="text-center text-gray-600 text-sm mt-2">
+                Compassionate care for over 25 years
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Help Section -->
+    <section class="section-padding bg-light-blue">
+      <div class="container-custom">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-navy mb-6">Still Have Questions?</h2>
+          <p class="text-lg text-gray-700 mb-8">
+            Our team is always ready to help. Whether you need information about our services, 
+            want to schedule an appointment, or have insurance questions, we're here for you.
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold text-navy mb-3">Call Us Direct</h3>
+              <p class="text-gray-700 mb-4">Speak with our friendly staff for immediate assistance</p>
+              <a href="tel:662-349-1999" class="btn-primary w-full text-center block">
+                (662) 349-1999
+              </a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold text-navy mb-3">Visit Our Office</h3>
+              <p class="text-gray-700 mb-4">Located conveniently in Southaven, MS</p>
+              <a href="/hours-location" class="btn-secondary w-full text-center block">
+                Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
